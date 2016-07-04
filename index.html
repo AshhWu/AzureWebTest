@@ -4,17 +4,22 @@
 <title>Azure Web Test</title>
 <meta charset="UTF-8">
 <script type='text/javascript' src='//font.arphic.com/FontSubsetOutput/1467612179174/4170E45460F5CC0B9CAE25064E471B7B/1467612179174.JS?2846178004'></script>
+<script type='text/javascript' src='//font.arphic.com/FontSubsetOutput/1467612179174/4170E45460F5CC0B9CAE25064E471B7B/1467612179174.JS?5556602715'></script>
+</head>
 <style>
-@font-face {
-  font-family: Arphic;
-  src: url(http://font.arphic.com/FontSubsetOutput/1467612179174/4170E45460F5CC0B9CAE25064E471B7B/1467612179174.JS?2846178004);
-  font-weight: bold;
+.arwf-loading body { /*Web Font正在載入中，不顯示文字*/
+      opacity: 0;
+      visibility: hidden;
 }
-.font{
-	font-family: Arphic;
+.arwf-active body { /*Web Font處理成功，直接顯示文字*/
+      opacity: 1;
+      visibility: visible;
+}
+.arwf-inactive body {/*如果Web Font處理失敗，直接顯示文字*/
+      opacity: 1;
+      visibility: visible;
 }
 </style>
-</head>
 <body>
 <script>
   // This is called with the results from from FB.getLoginStatus().
