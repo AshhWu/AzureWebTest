@@ -1,119 +1,58 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-<title>Azure Web Test</title>
-<meta charset="UTF-8">
-<!-- <script type='text/javascript' src='//font.arphic.com/FontSubsetOutput/1467612179174/4170E45460F5CC0B9CAE25064E471B7B/1467612179174.JS?5556602715'></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Title -->
+    <title>Demo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <script type='text/javascript' src='//font.arphic.com/FontSubsetOutput/1467612179174/4170E45460F5CC0B9CAE25064E471B7B/1467612179174.JS?7698797708'></script>
+
+    <!-- CSS -->
+    <link href="css/demo.css" rel="stylesheet">
+    <link href="css/ifontLoad.css" rel="stylesheet">
+
 </head>
-<style>
-.arwf-loading body { /*Web Font正在載入中，不顯示文字*/
-      opacity: 0;
-      visibility: hidden;
-}
-.arwf-active body { /*Web Font處理成功，直接顯示文字*/
-      opacity: 1;
-      visibility: visible;
-}
-.arwf-inactive body {/*如果Web Font處理失敗，直接顯示文字*/
-      opacity: 1;
-      visibility: visible;
-}
-</style> -->
-<body>
-<script>
-  // This is called with the results from from FB.getLoginStatus().
-  function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
-    // The response object is returned with a status field that lets the
-    // app know the current login status of the person.
-    // Full docs on the response object can be found in the documentation
-    // for FB.getLoginStatus().
-    if (response.status === 'connected') {
-      // Logged into your app and Facebook.
-      testAPI();
-    } else if (response.status === 'not_authorized') {
-      // The person is logged into Facebook, but not your app.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
-    } else {
-      // The person is not logged into Facebook, so we're not sure if
-      // they are logged into this app or not.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into Facebook.';
-    }
-  }
 
-  // This function is called when someone finishes with the Login
-  // Button.  See the onlogin handler attached to it in the sample
-  // code below.
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-  }
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<div class="ifont">
+		<!-- Nav -->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				
+				<div>
+					<a href="#">icon</a>
+				</div>
 
-  window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '697186787086383',
-    cookie     : true,  // enable cookies to allow the server to access 
-                        // the session
-    xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.6' // use version 2.6
-  });
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="hidden">
+							<a href="#Top"></a>
+						</li>
+						<li>
+							<a href="#work">作品</a>
+						</li>
+						<li>
+							<a href="#designer">設計師藝廊</a>
+						</li>
+						<li>
+							<a href="#editor">線上編輯器</a>
+						</li>
+						<li>
+							<a href="#rule">參賽規則</a>
+						</li>
+					</ul>
+				</div>
 
-  // Now that we've initialized the JavaScript SDK, we call 
-  // FB.getLoginStatus().  This function gets the state of the
-  // person visiting this page and can return one of three states to
-  // the callback you provide.  They can be:
-  //
-  // 1. Logged into your app ('connected')
-  // 2. Logged into Facebook, but not your app ('not_authorized')
-  // 3. Not logged into Facebook and can't tell if they are logged into
-  //    your app or not.
-  //
-  // These three cases are handled in the callback function.
-
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-
-  };
-
-  // Load the SDK asynchronously
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-  // Here we run a very simple test of the Graph API after login is
-  // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
-    });
-  }
-</script>
-
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
-<div class="font">
-Hi there!我的網站
-</div>
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
-
+			</div>
+		</nav>
+	</div>
 </body>
-</html>
