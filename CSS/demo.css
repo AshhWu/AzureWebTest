@@ -110,15 +110,15 @@ a:focus {
  	background-size: cover;
 }
 .landing .landing-body {
-  display: table-cell;
-  vertical-align: middle;
+  	display: table-cell;
+  	vertical-align: middle;
 }
 .landing .landing-body .brand-heading {
-  font-size: 40px;
+  	font-size: 40px;
 }
 .landing .landing-body .landing-text {
-	color: #ffc42e;
-  font-size: 18px;
+	color: white;
+ 	font-size: 18px;
 }
 @media (min-width: 768px) {
   .landing {
@@ -138,7 +138,7 @@ a:focus {
   	border: 2px solid white;
   	font-size: 25px;
   	color: 	white;
-  	background-color: rgba(255, 255, 255, 0.2);
+  	background-color: rgba(255,200,50,0.9);
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
   	transition: background 0.3s ease-in-out;
@@ -147,7 +147,11 @@ a:focus {
 .outline-btn:hover,
 .outline-btn:focus {
   color: white;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255,200,50,1.0);
+}
+
+#myCarousel{
+	padding-right: 10px;
 }
 
 .work-section{
