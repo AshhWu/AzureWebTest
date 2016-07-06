@@ -1,0 +1,12 @@
+.arwf-loading body { /*Web Font正在載入中，不顯示文字*/
+      opacity: 0;
+      visibility: hidden;
+}
+.arwf-active body { /*Web Font處理成功，直接顯示文字*/
+      opacity: 1;
+      visibility: visible;
+}
+.arwf-inactive body {/*如果Web Font處理失敗，直接顯示文字*/
+      opacity: 1;
+      visibility: visible;
+}
