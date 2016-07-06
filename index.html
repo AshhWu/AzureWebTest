@@ -13,7 +13,14 @@
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
+
     <!-- Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script type='text/javascript' src='//font.arphic.com/FontSubsetOutput/1467612179174/4170E45460F5CC0B9CAE25064E471B7B/1467612179174.JS?7698797708'></script>
 
     <!-- CSS -->
@@ -22,65 +29,356 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="Top" data-spy="scroll" data-target=".navbar-fixed-top">
 	<div class="ifont">
 		<!-- Nav -->
-		<nav class="navbar navbar-fixed-top">
+		<nav class="navbar navbar-fixed-top navbar-style" role="navigation">
 			<div class="container">
-				
-				<div>
-					<a class="navbar-brand" href="#">icon</a>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+            	    </button>
+					<div>
+						<a class="navbar-brand page-scroll" href="#Top">icon</a>
+					</div>
 				</div>
-
-				<div>
+				<div class="collapse navbar-collapse navbar-main-collapse">
 					<ul class="nav navbar-nav">
 						<li class="hidden">
 							<a href="#Top"></a>
 						</li>
 						<li>
-							<a href="#work">作品</a>
+							<a href="#work" class="page-scroll">作品</a>
 						</li>
 						<li>
-							<a href="#designer">設計師藝廊</a>
+							<a href="#designer" class="page-scroll">設計師藝廊</a>
 						</li>
 						<li>
-							<a href="#rule">參賽規則</a>
+							<a href="#rule" class="page-scroll">活動辦法</a>
 						</li>
 						<li>
 							<a href="#">線上編輯頁面</a>
 						</li>
 					</ul>
-				</div>
+				
+					<div class="navbar-right">
+						<a href="#" class="btn btn-warning yellow-btn">馬上報名</a>
+					</div>
 
+				</div>
 			</div>			
 		</nav>
 
 		<!-- Landing Header -->
-		<header>
-			<div class="container">
+		<header class="landing">
+			<div class="landing-body">
+            <div class="container">
 				<div class="row">
-					<div class="col-md-8 col-offset-2">
-						<h1>Landing Page</h1>
-						<a href="#Work">Show me</a>
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="brand-heading">Landing Page</h1>
+						<p class="landing-text">Say something</p>
+						<a href="#work" class="btn outline-btn page-scroll">Show</a>
 					</div>
 				</div>
+                </div>
 			</div>
 		</header>
 
 		<!-- Work Section -->
-		<section>
-			
+		<section id="work" class="container text-center work-section">
+			<div class="row">
+            	<div class="col-lg-8 col-lg-offset-2">
+            		<h2>作品展示</h2>
+            	</div>
+            </div>
+            <div class="carousel slide" id="myCarousel">
+            <div class="row img-responsive">
+        		<div class="carousel-inner container">
+           		 	<div class="item active">
+            	        <ul class="thumbnails">
+                	        <li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic1.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic2.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic3.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic4.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                    	</ul>
+            		</div>
+            		<!-- Second Slide -->
+            		<div class="item">
+            	        <ul class="thumbnails">
+                	        <li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic1.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic2.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic3.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic4.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                    	</ul>
+            		</div>
+            		<!-- Third Slide -->
+          			<div class="item">
+            	        <ul class="thumbnails">
+                	        <li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic1.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic2.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic3.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic4.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                    	</ul>
+            		</div>
+            	</div>
+
+            	<div class="control-box">                            
+        	    	<a data-slide="prev" href="#myCarousel" class="carousel-control left">L</a>
+            		<a data-slide="next" href="#myCarousel" class="carousel-control right">R</a>
+        		</div>
+
+        	</div>
+        	</div>
+    	</div>
 		</section>
 
 		<!-- Designer Section -->
-		<section>
-			
+		<section id="designer" class="designer-section container text-center">
+			<div class="row">
+            	<div class="col-lg-8 col-lg-offset-2">
+            		<h2>設計師專欄</h2>
+            	</div>
+            </div>
+            <div class="carousel slide" id="myCarousel">
+            <div class="row img-responsive">
+        		<div class="carousel-inner">
+           		 	<div class="item active">
+            	        <ul class="thumbnails">
+                	        <li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic1.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic2.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic3.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic4.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                    	</ul>
+            		</div>
+            		<!-- Second Slide -->
+            		<div class="item">
+            	        <ul class="thumbnails">
+                	        <li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic1.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic2.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic3.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic4.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                    	</ul>
+            		</div>
+            		<!-- Third Slide -->
+          			<div class="item">
+            	        <ul class="thumbnails">
+                	        <li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic1.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+            					<a href="#"><img src="image/pic2.jpeg"></a>
+            					<div class="caption">
+            						<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic3.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                        	<li class="thumbnail col-xs-6 col-sm-3">
+	            				<a href="#"><img src="image/pic4.jpeg"></a>
+    	        				<div class="caption">
+        	    					<h4>夏日大作戰</h4>
+            						<a href="#">蕭競騰</a>
+            					</div>
+            				</li>
+                    	</ul>
+            		</div>
+            	</div>
+
+            	<div class="control-box">                            
+        	    	<a data-slide="prev" href="#myCarousel" class="carousel-control left">L</a>
+            		<a data-slide="next" href="#myCarousel" class="carousel-control right">R</a>
+        		</div>
+
+        	</div>
+        	</div>
+    	</div>
 		</section>
 
 		<!-- Rule Section -->
-		<section>
-			
+		<section id="rule" class="container rule-section">
+			<div class="row">
+            	<div class="col-md-8 col-md-offset-2 text-center">
+            		<h2>活動辦法</h2>
+            	</div>
+            	<div class="col-md-10 col-md-offset-1">
+            		<ol>
+            			<li><p>
+            				參加者請拍攝一段總長不超過90秒(含90秒)的影片，用你能想到的任何方式來表達你對籃球的熱情與渴望(影片內容須有參加者本人影像，並完整回答以下3個問題，順序不限)：
+            			</p></li>
+            			<li><p>
+            				除可於FACEBOOK活動頁報名，亦可透過實體活動或特約店點報名，詳情將在http://gonike.me/risetw公布。
+            			</p></li>
+            			<li><p>
+            				須自行拍攝上傳於指定活動頁完成報名，總長不超過90秒(含90秒)的影片、彩色黑白不限。
+            			</p></li>
+            			<li><p>
+            				如違反上述規定，主辦單位有權取消参加者的入選資格，該参加者須自行承擔其法律責任，並保證BRS NIKE TAIWAN（必爾斯藍基股份有限公司）免受任何損失。若該作品已被宣布為入選之作品，主辦單位有權立即取消參加資格並另行遴選入選者。
+            			<br></p></li>
+            			<li><p>
+            				參加者應於2015年05月21日起至2015年06月18日23:59止完成作品上傳。
+            			</p></li>
+            		</ol>
+            	</div>
+
+            	<div class="row">
+            		<div class="col-md-4">
+
+            		</div>
+            	</div>
+            </div>
 		</section>
 
-	</div>
+	<!-- Footer -->
+    	<footer>
+        	<div class="container text-center">
+            	<p>Footer</p>
+        	</div>
+    	</footer>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="owl.carousel/assets/owl-carousel/owl.carousel.js"></script>
+
+    <!-- Theme JS -->
+     <script src="demo.js"></script>
 </body>
