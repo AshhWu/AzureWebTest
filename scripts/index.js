@@ -20,9 +20,3 @@ $(document).ready(collapseNavbar);
         event.preventDefault();
     });
 });
- //Carousel auto time setting
- $(document).ready(function() {
-    $('.carousel').carousel({
-      interval:  6000
-    })
-  });

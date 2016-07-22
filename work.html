@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Title -->
+    <title>作品</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/ifontLoad.css" rel="stylesheet">
+
+</head>
+
+<body id="Top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Nav -->
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse" aria-expanded="false" aria-controls="navbar">
+                    Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">icon</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="work.html">作品</a>
+                        </li>
+                        <li>
+                            <a href="#">設計師藝廊</a>
+                        </li>
+                        <li>
+                            <a href="#">參賽規則</a>
+                        </li>
+                        <li>
+                            <a href="#">線上編輯頁面</a>
+                        </li>
+                    </ul>
+                
+                    <div class="navbar-right">
+                        <a href="#" class="btn btn-warning yellow-btn">立即參加</a>
+                    </div>
+
+                </div>
+            </div>          
+        </nav>
+    <!-- Work -->
+        <div class="container">
+            <div class="row row-content" ng-controller="WorkController">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li role="presentation" ng-class="{active:isSelected(1)}">
+                            <a ng-click="select(1)" aria-controls="all menu" role="tab"> 手機殼 </a>
+                        </li>
+                        <li role="presentation" ng-class="{active:isSelected(2)}">
+                            <a ng-click="select(2)" aria-controls="appetizers" role="tab"> 馬克杯 </a></li>
+                        <li role="presentation" ng-class="{active:isSelected(3)}">
+                        <a ng-click="select(3)" aria-controls="mains" role="tab"> 掛布 </a></li>               
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="order">  排序  </label>
+                                <select id="order">
+                                    <option>最新作品</option>
+                                    <option>熱門</option>
+                                    <option>票數</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <owl-carousel owl-options="{navigation: true, pagination: false, rewindNav : false}">
+                            <div class="col-xs-6 col-sm-3" ng-repeat="work in works | filter:filtText ">
+                                <div class="single-work">
+                                    <a href="#">
+                                        <div class="thumbnail">
+                                            <img class="img-responsive" ng-src={{work.image}} align="center" alt="">
+                                        </div>
+                                        <h4>{{work.name}}</h4>
+                                    </a>
+                                    <div class="row">
+                                        <div class="col-xs-9">
+                                            <a href="#"> {{work.author}} </a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <div class="votes">{{work.price}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </owl-carousel>
+                        </div>
+                        <div class="row">
+                            <ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+
+    <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>Footer</p>
+            </div>
+        </footer>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/ui-bootstrap-tpls-2.0.0.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="scripts/myApp.js"></script>
+</body>
+</html>
