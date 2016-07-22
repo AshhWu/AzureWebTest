@@ -84,39 +84,61 @@
             		      <h3 class="section-title">作品展示</h3>
                     </div>
                 </div>
-                <div class="container">
-                <div class="row" style="border: 2px solid">
-                    <owl-carousel data-options="{navigation: true, pagination: false, rewindNav : false}">
-                        <div owl-carousel-item class="col-xs-4 col-sm-3 item "  ng-repeat="work in works" >
-                                <div class="single-work">
-                                    <a href="#">
-                                        <div class="thumbnail">
-                                            <img class="img-responsive" ng-src={{work.image}} align="center" alt="">
-                                        </div>
-                                        <h4>{{work.name}}</h4>
-                                    </a>
-                                    <div class="row">
-                                        <div class="col-xs-9">
-                                            <a href="#"> {{work.author}} </a>
-                                        </div>
-                                        <div class="col-xs-2">
-                                            <div class="votes">{{work.price}}</div>
-                                        </div>
+                <div class="row">
+                    <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: true, rewindNav : true, lazyLoad:true}">
+                        <div owl-carousel-item="" ng-repeat="work in works" class="item">
+                            <div class="single-work">
+                                <a href="#">
+                                <div class="thumbnail">
+                                    <img class="img-responsive" ng-src={{work.image}} align="center" alt="">
+                                </div>
+                                <h4>{{work.name}}</h4>
+                                </a>
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <a href="#"> {{work.author}} </a>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="votes">{{work.price}}</div>
                                     </div>
                                 </div>
+                            </div>
                         </div>
-            		</owl-carousel>
+                    </data-owl-carousel>
             	</div>
-                </div>
             </div>
 		</section>
 
 		<!-- Designer Section -->
-		<section id="designer" class="designer-section container text-center">
-			<div class="row">
-            	<div class="col-xs-10 col-xs-offset-1">
-            		<h3 class="section-title">設計師專欄</h3>
-            	</div>
+		<section id="designer" class="container" ng-controller="IndexDesignerSectionCtrl">
+			<div class="text-center designer-section">
+                <div class="row">
+            	   <div class="col-xs-10 col-xs-offset-1">
+            		  <h3 class="section-title">設計師專欄</h3>
+            	   </div>
+                </div>
+                <div class="row">
+                    <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: true, rewindNav : true, lazyLoad:true}">
+                        <div owl-carousel-item="" ng-repeat="work in works" class="item">
+                            <div class="single-work">
+                                <a href="#">
+                                <div class="thumbnail">
+                                    <img class="img-responsive" ng-src={{work.image}} align="center" alt="">
+                                </div>
+                                <h4>{{work.name}}</h4>
+                                </a>
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <a href="#"> {{work.author}} </a>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="votes">{{work.price}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </data-owl-carousel>
+                </div>
             </div>
 		</section>
 
@@ -172,7 +194,7 @@
     <!-- Theme JS -->
      <script src="scripts/navbarCollapse.js"></script>
      <script src="scripts/myApp.js"></script>
-
-     <script src="vendor/owl.carousel/owl-carousel/owl.carousel.min.js">
+     <script src="scripts/carouselFix.js"></script>
+     <script src="vendor/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
 </body>
 </html>

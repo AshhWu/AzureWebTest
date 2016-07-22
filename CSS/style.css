@@ -190,12 +190,13 @@ a:focus {
 }
 
 .single-work { 
-  padding-top:30px;
+  padding:30px 10px 0 10px;
 }
 
 
-.tab-pane{
-  padding: 20px;
+
+.tab-content{
+  padding: 70px 30px 30px 30px;
 }
 
 footer {
