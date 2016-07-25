@@ -43,7 +43,7 @@
 							<a href="work.html">作品</a>
 						</li>
 						<li>
-							<a href="#">設計師藝廊</a>
+							<a href="designer.html">設計師藝廊</a>
 						</li>
 						<li>
 							<a href="#">參賽規則</a>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: true, rewindNav : true, lazyLoad:true}">
+                    <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: true, rewindNav : true}">
                         <div owl-carousel-item="" ng-repeat="work in works" class="item">
                             <div class="single-work">
                                 <a href="#">
@@ -95,11 +95,8 @@
                                 <h4>{{work.name}}</h4>
                                 </a>
                                 <div class="row">
-                                    <div class="col-xs-9">
-                                        <a href="#"> {{work.author}} </a>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <div class="votes">{{work.price}}</div>
+                                    <div class="col-xs-12">
+                                        <a href="profile.html">{{work.author}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +115,7 @@
             	   </div>
                 </div>
                 <div class="row">
-                    <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: true, rewindNav : true, lazyLoad:true}">
+                    <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: true, rewindNav : true}">
                         <div owl-carousel-item="" ng-repeat="work in works" class="item">
                             <div class="single-work">
                                 <a href="#">
@@ -128,11 +125,8 @@
                                 <h4>{{work.name}}</h4>
                                 </a>
                                 <div class="row">
-                                    <div class="col-xs-9">
-                                        <a href="#"> {{work.author}} </a>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <div class="votes">{{work.price}}</div>
+                                    <div class="col-xs-12">
+                                        <a href="profile.html"> {{work.author}} </a>
                                     </div>
                                 </div>
                             </div>
@@ -194,6 +188,8 @@
     <!-- Theme JS -->
      <script src="scripts/navbarCollapse.js"></script>
      <script src="scripts/myApp.js"></script>
+     <script src="scripts/controllers.js"></script>
+     <script src="scripts/services.js"></script>
      <script src="scripts/carouselFix.js"></script>
      <script src="vendor/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
 </body>
