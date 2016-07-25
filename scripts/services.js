@@ -128,4 +128,8 @@ angular.module('myApp')
                 	return works;
                 };
 
+                this.getDesigns = function(){
+                	return works;
+                };
+
 	});
